@@ -19,7 +19,8 @@ jobs:
 
       # Test Phase: Run the container and execute tests inside it
       - name: Run Container and Execute Tests
-        run: docker run --rm ayazid/my-docker-app:latest /usr/local/bin/run-tests.sh
+        run: docker run --rm my-docker-app:latest ./run-tests.sh
+
 
   deploy:
     runs-on: ubuntu-latest
